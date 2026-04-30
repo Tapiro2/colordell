@@ -1,90 +1,90 @@
 body {
-    font-family: Arial;
-    text-align: center;
-    background: #121213;
-    color: white;
+    font-family: Arial; /* קובע את הפונט של כל הדף ל-Arial */
+    text-align: center; /* ממרכז את הטקסט */
+    background: #121213; /* צבע רקע כהה */
+    color: white; /* צבע טקסט לבן */
 }
 
 .row {
-    display: flex;
-    justify-content: center;
+    display: flex; /* מציג את התאים בשורה אחת בעזרת flex */
+    justify-content: center; /* ממרכז את התאים אופקית */
 }
 
 .cell {
-    width: 65px;    
-    height: 55px;
-    border: 2px solid #3a3a3c;
-    margin: 5px;
-    border-radius: 6px;
-    position: relative;
-    transition: 0.2s;
+    width: 65px;    /* רוחב התא */
+    height: 55px; /* גובה התא */
+    border: 2px solid #3a3a3c; /* מסגרת בצבע אפור כהה */
+    margin: 5px; /* רווח בין תאים */
+    border-radius: 6px; /* פינות מעוגלות */
+    position: relative; /* מאפשר למקם אלמנטים פנימיים בצורה מוחלטת */
+    transition: 0.2s; /* אנימציה קצרה לשינויים (למשל צבע/outline) */
 }
 
 .cell.correct {
-    outline: 4px solid #4CAF50;
+    outline: 4px solid #4CAF50; /* מסגרת ירוקה - תשובה נכונה */
 }
 
 .cell.wrong-place {
-    outline: 4px solid #FFC107;
+    outline: 4px solid #FFC107; /* מסגרת צהובה - צבע נכון במקום לא נכון */
 }
 
 .cell.not-exist {
-    outline: 4px solid #555;
+    outline: 4px solid #555; /* מסגרת אפורה - צבע לא קיים */
 }
 
 .cell.correct::after {
-    content: "✔";
-    position: absolute;
-    bottom: 4px;
-    right: 6px;
-    font-size: 18px;
-    color: white;
+    content: "✔"; /* מוסיף סימן וי בתוך התא */
+    position: absolute; /* מיקום יחסי לתא */
+    bottom: 4px; /* מרחק מלמטה */
+    right: 6px; /* מרחק מימין */
+    font-size: 18px; /* גודל הטקסט */
+    color: white; /* צבע הסימן */
 }
 
 .cell.wrong-place::after {
-    content: "~";
-    position: absolute;
-    bottom: 4px;
-    right: 6px;
-    font-size: 18px;
-    color: white;
+    content: "~"; /* מוסיף סימן טילדה */
+    position: absolute; /* מיקום מוחלט */
+    bottom: 4px; /* מרחק מלמטה */
+    right: 6px; /* מרחק מימין */
+    font-size: 18px; /* גודל */
+    color: white; /* צבע */
 }
 
 .cell.not-exist::after {
-    content: "✖";
-    position: absolute;
-    bottom: 4px;
-    right: 6px;
-    font-size: 18px;
-    color: white;
+    content: "✖"; /* מוסיף איקס */
+    position: absolute; /* מיקום מוחלט */
+    bottom: 4px; /* מרחק מלמטה */
+    right: 6px; /* מרחק מימין */
+    font-size: 18px; /* גודל */
+    color: white; /* צבע */
 }
 
 #color-palette {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
+    display: flex; /* מציג את הצבעים בשורה */
+    flex-wrap: wrap; /* מאפשר ירידת שורה אם אין מקום */
+    justify-content: center; /* ממרכז את הפלטה */
+    margin: 20px; /* רווח מסביב */
 }
 
 .color-option {
-    width: 40px;
-    height: 40px;
-    margin: 6px;
-    border-radius: 8px;
-    cursor: pointer;
+    width: 40px; /* רוחב של ריבוע צבע */
+    height: 40px; /* גובה */
+    margin: 6px; /* רווח בין צבעים */
+    border-radius: 8px; /* פינות מעוגלות */
+    cursor: pointer; /* משנה את הסמן ליד (לחיץ) */
 }
 
 button {
-    margin: 5px;
-    padding: 10px 15px;
-    background: #3a3a3c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin: 5px; /* רווח בין כפתורים */
+    padding: 10px 15px; /* ריפוד פנימי */
+    background: #3a3a3c; /* צבע רקע */
+    color: white; /* צבע טקסט */
+    border: none; /* ללא מסגרת */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* סמן יד */
 }
 
 #restart-btn {
-    display: none;
-    background: #4CAF50;
+    display: none; /* מוסתר כברירת מחדל */
+    background: #4CAF50; /* צבע ירוק לכפתור ריסט */
 }

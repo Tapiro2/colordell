@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- מגדיר שמדובר במסמך HTML5 -->
+<html lang="en"> <!-- תגית ראשית של הדף, עם שפה אנגלית -->
+
+<head>
+<meta charset="UTF-8"> <!-- קידוד תווים (תומך בעברית ועוד שפות) -->
+<title>Color Wordle</title> <!-- הכותרת שמופיעה בלשונית הדפדפן -->
+<link rel="stylesheet" href="style.css"> <!-- קישור לקובץ CSS שמעצב את הדף -->
+</head>
+
+<body>
+
+<h1>COLOR WORDLE</h1> <!-- כותרת ראשית של המשחק -->
+
+<div id="board"></div> <!-- אזור שבו ייבנה הלוח בעזרת JavaScript -->
+
+<div id="color-palette"></div> <!-- אזור שבו יוצגו הצבעים לבחירה -->
+
+<div class="buttons"> <!-- קונטיינר לכפתורים -->
+    <button id="delete-btn">Delete</button> <!-- כפתור למחיקת בחירה -->
+    <button id="submit-guess">Guess</button> <!-- כפתור לשליחת ניחוש -->
+</div>
+
+<button id="restart-btn">Play Again</button> <!-- כפתור ריסט (מוסתר בהתחלה דרך CSS) -->
+
+<div id="answer"></div> <!-- אזור שבו תוצג התשובה בסוף המשחק -->
+
+<script src="script.js"></script> <!-- קישור לקובץ JavaScript שמנהל את המשחק -->
+</body>
+</html>
